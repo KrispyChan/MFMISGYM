@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(place\ 2.jpg);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.search-container {
+    position: absolute;
+    right: 200px;
+    top: 20px;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    height: 50px;
+    z-index: 9999;
+    
+}
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%; 
+}
+.search-container i {
+    font-size: 22px;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.searchiconpic {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    right: -50px;
+}
+.searchiconpic1{
+    position: absolute;
+    height: 45px;
+    width: 50px;
+    bottom: 10px;
+    left: 20px;
+}
+h2{
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #191919;
+}
+.orange{
+    font-size: 40px;
+    color: #E36D01;
+    font-weight: 800;
+} 
+.white{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+}
+.paragraph{
+    position: absolute;
+    background-color: #191919;
+    border-radius: 10px;
+    text-align: center;
+    left: 490px;
+    bottom: 50px;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+}
+.Orange{
+    font-size: 32px;
+    color: #E36D01;
+}
+.White{
+    font-size: 32px;
+    color: #fff;
+}
+.slide{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    background-color: #000;
+    transition: 0.5s ease;
+    border-radius: 10px;
+    gap: 20px;
+}
+.logo h1{
+    color: #cb5b06;
+    font-weight: 600;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+ul li:hover a{
+    background-color: #cb5b06;
+}
+
+input[type="checkbox"]{
+    display: none;
+    visibility: hidden;
+}
+.logout{
+    position: absolute;
+    top: 550px;
+    left: 80px;
+    height: 32px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #cb5b06;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+.logout:hover {
+    background-color: #000;
+}
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 40px;
+    left: 80px;
+}
+.machoguy img{
+    position: absolute;
+    left: 360px;
+    top: 50px;
+    filter: brightness(0) invert(0);
+}
+.machoguy1 img{
+    position: absolute;
+    left: 350px;
+    top: 50px;
+}
+.logo1 img{
+    position: absolute;
+    height: 220px;
+    right: 170px;
+    top: 70px;
+}

@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(equipment-modified-copy.jpg);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 60%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1px;
+ 
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: white;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 520px;
+ 
+  
+}
+
+.nav-links li a {
+  color: hsl(0, 67%, 1%);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: dm-sans, sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  
+}
+
+.nav-links li a:hover {
+  color: #f4a261; 
+}
+
+.red {
+  color: hsl(0, 100%, 22%);
+  font-weight: 900;
+}
+
+.black {
+  color: black;
+  font-weight: 900;
+}
+
+.thetext{
+     position: absolute;
+     top: 5px;
+     left: 950px;
+     color: hsl(26, 94%, 41%);;
+     font-size: 60px;
+     font-family: dm-sans, sans-serif;
+     
+}
+.apathtext{
+     position: absolute;
+     top: 13%;
+     left: 850px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+.totext{
+     position: absolute;
+     top: 13%;
+     left: 1170px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+
+.soartext{
+     position: absolute;
+     top: 26%;
+     left: 890px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+
+.isatext{
+     position: absolute;
+     top: 38%;
+     left: 970px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+
+.bpathtext{
+     position: absolute;
+     top: 50%;
+     left: 890px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+
+.ofsoretext{
+     position: absolute;
+     top: 62%;
+     left: 850px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+
+.bigicon {
+  position: absolute;
+  top: 50%;
+  left: 140px;
+  transform: translateY(-50%); 
+
+}
+
+.bigicon img {
+  width: 600px;
+  height: auto;
+}
+
+.logout-btn {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logout-btn:hover {
+    background-color: hsl(31, 100%, 48%);
+    color: black;
+
+}
+
+
+
+
+
+
+

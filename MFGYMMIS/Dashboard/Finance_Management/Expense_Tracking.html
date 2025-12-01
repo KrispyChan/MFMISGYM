@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracking</title>
+    <link rel="stylesheet" href="Expense_Tracking.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <h2><span class="orange">FINANCE</span><span class="white"> MANAGEMENT</span></h2>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <img src="searchiconpic.png" alt="searchiconpic" class="searchiconpic">
+        </div>
+
+        <div>
+            <img src="profcon.png" alt="profile icon" class="profcon">
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="slide">
+        <div class="logo">
+            <img src="llogo-copy.png" alt="Muscle Factory logo">
+            <h1>MUSCLEFACTORY</h1>
+        </div>
+
+        <ul>
+            <li><a href="dashboard.html"><i class='bx bx-home-alt'></i>Dashboard</a></li>
+      <li><a href="Member.html"><i class='bx bx-user' ></i>Member Management</a></li>
+      <li><a href="Trainer.html" class="active"><i class='bx bx-user' ></i>Trainer Management</a></li>
+      <li><a href="class.html"><i class='bx bx-calendar-week'></i>Class & Schedule Management</a></li>
+      <li><a href="../Dashboard/Finance_Management/Finance_Management.html"><i class='bx bx-file'></i>Finance Management</a></li>
+      <li><a href="../Dashboard/Inventory_Management/Inventory_Management.html"><i class='bx bx-file'></i>Inventory Management</a></li>
+      <li><a href="../Dashboard/System_Settings_folder/System_Settings.html"><i class='bx bx-cog' ></i>System Settings</a></li>
+        </ul>
+
+        <span class="profile">OWNER@GMAIL.COM</span>
+
+        <div class="logout">
+            <a href="/index.html" class="logout-btn"><i class='bx bx-log-out'></i>logout</a>
+        </div>
+    </div>
+
+    <!-- CONTENT AREA -->
+    <div class="content">
+
+        <!-- TITLE BOX -->
+        <div class="center-box">
+            <p><span class="orange-text">EXPENSE TRACKING</span></p>
+            <p><span class="white-text">MANAGE IT HERE!</span></p>
+        </div>
+
+        <!-- TABLE -->
+        <div class="schedule-table-container">
+            <table class="schedule-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr>
+                    <td>Rent</td>
+                    <td>09/05/25</td>
+                    <td>Php 15,000</td>
+                    <td>Monthly Rent</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Utilities</td>
+                    <td>09/05/25</td>
+                    <td>Php 2,500</td>
+                    <td>Electric Bill</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Internet</td>
+                    <td>09/05/25</td>
+                    <td>Php 1,500</td>
+                    <td>PLDT Plan</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Salary</td>
+                    <td>09/05/25</td>
+                    <td>Php 40,000</td>
+                    <td>Monthly Paycheck</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Bonus</td>
+                    <td>09/05/25</td>
+                    <td>Php 10,000</td>
+                    <td>Incentive</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Advertisement</td>
+                    <td>09/05/25</td>
+                    <td>Php 2,000</td>
+                    <td>Flyers/Poster Printing</td>
+                    <td>
+                        <button class="action-btn">Edit</button>
+                        <button class="action-btn delete">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="back-btn-wrapper">
+            <button class="setting-btn">
+                <a href="Finance_Management.html">Back to Menu</a>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

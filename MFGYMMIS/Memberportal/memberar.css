@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+    height: 70px;
+    z-index: 5;
+}
+
+header h2{
+    position: relative;
+}
+
+.orange{
+    position: absolute;
+    font-size: 40px;
+    color: #E36D01;
+    font-weight: 800;
+    left: 740px;
+    top: 1px;
+}
+
+.white{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+    left: 888px;
+    top: 1px;
+}
+
+.picsize{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 40px;
+    top: 9px;
+}
+
+
+/* SIDEBAR – FIXED, NO TOGGLE */
+
+.slide{
+    height: 100%;
+    width: 260px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+    padding-top: 0;
+    z-index: 5;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.logo h1{
+    color: #cb5b06;
+    padding: 24px 0;
+    padding-left: 65px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* NAV ITEMS */
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+ul li:hover a{
+    background-color: #cb5b06;
+}
+
+.nounderline{
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    left: 40px;
+}
+
+.logout{
+        position: absolute;
+        bottom: 40px;
+        left: 80px;
+        height: 32px;
+        width: 90px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #cb5b06;
+        padding-top: 5px;
+        padding-left: 5px;
+}
+
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: #000;
+}
+
+/* MAIN CARD CONTAINER */
+
+.container{
+    position: absolute;
+    left: 509px;
+    top: 90px;
+    height: 650px;
+    width: 900px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #fff;
+    z-index: 1;
+}
+
+.container h1{
+    font-size: 28px;
+    font-weight: 800;
+    color: orange;
+    text-align: center;
+}
+
+.section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.left-col{
+    flex: 1.4;
+}
+
+/* CARDS + TEXT */
+
+.card{
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.title{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.check{
+    color: green;
+    font-weight: bold;
+}
+
+.cross{
+    color: red;
+    font-weight: bold;
+}
+
+/* RIGHT SIDE – VIEW YOUR ATTENDANCE HERE */
+
+.attendanceorange{
+    color: orange;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.attendancewhite{
+    color: white;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.attendanceview{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewbutton{
+    margin-top: 20px;
+    background-color: orange;
+    font-weight: bold;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 18px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.viewbutton:hover{
+    background-color: #000;
+    color: #fff;
+}

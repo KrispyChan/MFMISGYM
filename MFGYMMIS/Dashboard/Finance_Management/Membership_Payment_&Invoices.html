@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Payment & Invoices</title>
+    <link rel="stylesheet" href="Membership_Payment_&Invoices.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- HEADER (same style as Finance_Management) -->
+    <header>
+        <h2><span class="orange">FINANCE</span><span class="white"> MANAGEMENT</span></h2>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <img src="searchiconpic.png" alt="searchiconpic" class="searchiconpic">
+        </div>
+
+        <div>
+            <img src="profcon.png" alt="profile icon" class="profcon">
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="slide">
+        <div class="logo">
+            <img src="llogo-copy.png" alt="Muscle Factory logo">
+            <h1>MUSCLEFACTORY</h1>
+        </div>
+
+        <ul>
+            <li><a href="dashboard.html"><i class='bx bx-home-alt'></i>Dashboard</a></li>
+      <li><a href="Member.html"><i class='bx bx-user' ></i>Member Management</a></li>
+      <li><a href="Trainer.html" class="active"><i class='bx bx-user' ></i>Trainer Management</a></li>
+      <li><a href="class.html"><i class='bx bx-calendar-week'></i>Class & Schedule Management</a></li>
+      <li><a href="../Dashboard/Finance_Management/Finance_Management.html"><i class='bx bx-file'></i>Finance Management</a></li>
+      <li><a href="../Dashboard/Inventory_Management/Inventory_Management.html"><i class='bx bx-file'></i>Inventory Management</a></li>
+      <li><a href="../Dashboard/System_Settings_folder/System_Settings.html"><i class='bx bx-cog' ></i>System Settings</a></li>
+        </ul>
+
+        <span class="profile">OWNER@GMAIL.COM</span>
+
+        <div class="logout">
+            <a href="/index.html" class="logout-btn"><i class='bx bx-log-out'></i>logout</a>
+        </div>
+    </div>
+
+    <!-- CONTENT AREA (title box + table + back btn) -->
+    <div class="content">
+
+        <div class="center-box">
+            <p><span class="orange-text">MEMBERSHIP PAYMENT &amp; INVOICES</span></p>
+            <p><span class="white-text">MANAGE IT HERE!</span></p>
+        </div>
+
+        <div class="schedule-table-container">
+            <table class="schedule-table">
+                <tr>
+                    <th>Client Name</th>
+                    <th>Due Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr>
+                    <td>Elly Cauyao</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn view">View</button></td>
+                </tr>
+
+                <tr>
+                    <td>Ronald Samaniego</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn cancel">Cancel</button></td>
+                </tr>
+
+                <tr>
+                    <td>Isko Moreno</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn invoice">Invoice</button></td>
+                </tr>
+
+                <tr>
+                    <td>Jella Cinderulo</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn cancel">Cancel</button></td>
+                </tr>
+
+                <tr>
+                    <td>Will Smith</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn invoice">Invoice</button></td>
+                </tr>
+
+                <tr>
+                    <td>Elizabeth</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn cancel">Cancel</button></td>
+                </tr>
+
+                <tr>
+                    <td>Dairy Cream</td>
+                    <td>09/05/25</td>
+                    <td>Php 500</td>
+                    <td>Active</td>
+                    <td><button class="cancel-btn invoice">Invoice</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="back-btn-wrapper">
+            <button class="setting-btn">
+                <a href="Finance_Management.html">Back to Menu</a>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

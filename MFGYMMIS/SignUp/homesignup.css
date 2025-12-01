@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #ffffff;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("equipmentscopy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* top nav */
+
+.top-nav {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+.nav-logo h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.logo-orange {
+    color: #f57c1f;
+}
+
+.logo-white {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* layout */
+
+.page-content {
+    padding: 40px 80px 30px;
+}
+
+/* plans row */
+
+.plans-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.plan-card {
+    width: 30%;
+    text-align: center;
+    color: #f57c1f;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.plan-card h2 {
+    margin-bottom: 25px;
+}
+
+/* clickable orange boxes */
+
+.price-box {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f57c1f;
+    padding: 20px 10px;
+    border-radius: 2px;
+    min-width: 220px;
+    text-align: center;
+    transition: 0.25s ease;
+}
+
+.price-box span {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+/* HOVER for plans */
+
+.price-box:hover {
+    filter: brightness(1.2);
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+/* renew section */
+
+.renew-section {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.renew-section h2 {
+    color: #f57c1f;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.renew-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #f57c1f;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 999px;
+    padding: 18px 80px;
+    transition: 0.3s ease;
+}
+
+/* HOVER for RENEW button */
+
+.renew-btn:hover {
+    filter: brightness(1.2);
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+/* bottom note */
+
+.bottom-note {
+    margin-top: 60px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.bottom-note label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bottom-note input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #f57c1f;
+}

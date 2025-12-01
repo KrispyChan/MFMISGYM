@@ -1,0 +1,293 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url(bg2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    body::before{
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+    }
+
+    h2{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: #191919;
+        position: relative;
+        height: 70px;
+    }
+
+    .orange{
+        position: absolute;
+        font-size: 40px;
+        color: #E36D01;
+        font-weight: 800;
+        left: 680px;
+        top: 3px;
+    }
+
+    .white{
+        position: absolute;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 800;
+        left: 880px;
+        top: 3px;
+    }
+
+    .slide{
+        height: 100%;
+        width: 260px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        transition: 0.5s ease;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+
+    .logo h1{
+        color: #cb5b06;
+        font-weight: 600;
+        text-align: left;
+        padding: 24px 0;
+        padding-left: 65px;
+        border-bottom: 1px solid #fff;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    ul li a{
+        color: #fff;
+        font-weight: 500;
+        padding: 20px;
+        display: block;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: 0.3s ease-out;
+    }
+
+    ul li a i{
+        width: 40px;
+        text-align: center;
+    }
+
+    ul li:hover a{
+        background-color: #cb5b06;
+    }
+
+    .profile{
+        position: absolute;
+        color: #fff;
+        bottom: 80px;
+        left: 40px;
+    }
+
+    .logout{
+        position: absolute;
+        bottom: 40px;
+        left: 80px;
+        height: 32px;
+        width: 90px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #cb5b06;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .logout-btn{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .logout:hover{
+        background-color: #000;
+    }
+
+    .nounderline{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .picsize{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 40px;
+        top: 9px;
+    }
+
+
+    .hellomem{
+        position: absolute;
+        top: 110px;
+        left: 600px;
+        text-align: center;
+    }
+
+    .hellomemwhite{
+        color: white;
+        font-family: "Dela Gothic One", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        left: 100px;
+    }
+
+    .hellomemorange{
+        color: orange;
+        font-family: "Dela Gothic One", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+
+    .profile-card{
+        position: absolute;
+        left: 430px;
+        top: 260px;
+        height: 360px;
+        width: 900px;
+        background: rgba(0, 0, 0, 0.85);
+        border-radius: 20px;
+        padding: 25px 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        color: white;
+    }
+
+    .profile-card-title{
+        font-size: 32px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .title-orange{
+        color: #E36D01;
+    }
+
+    .title-white{
+        color: white;
+    }
+
+    .profile-card-inner{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .profile-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar-wrapper{
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    .avatar{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .edit-icon{
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        background: white;
+        color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+
+    .avatar-label{
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .profile-right{
+        flex: 1;
+    }
+
+    .setting-row{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .setting-row label{
+        width: 150px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .setting-row input{
+        flex: 1;
+        background-color: #000;
+        border: none;
+        border-radius: 25px;
+        padding: 14px 20px;
+        color: white;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .savebutton{
+        position: absolute;
+        margin-top: 10px;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 18px;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        left: 600px;
+    }
+
+    .savebutton:hover{
+        background-color: #000;
+    }

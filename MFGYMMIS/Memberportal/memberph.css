@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg2.jpg);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+    height: 70px;
+    z-index: 1;
+}
+
+header h2{
+    position: relative;
+}
+
+.orange{
+    position: absolute;
+    font-size: 40px;
+    color: #E36D01;
+    font-weight: 800;
+    left: 720px;
+    top: 3px;
+}
+
+.white{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+    left: 930px;
+    top: 3px;
+}
+
+/* PROFILE ICON SA HEADER */
+
+.picsize{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 40px;
+    top: 9px;
+}
+
+.profilecon{
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+/* SIDEBAR */
+
+.slide{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+    z-index: 2;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.logo h1{
+    color: #cb5b06;
+    font-weight: 600;
+    text-align: left;
+    padding: 24px 0;
+    padding-left: 65px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+ul li:hover a{
+    background-color: #cb5b06;
+}
+
+.nounderline{
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    left: 40px;
+    font-size: 16px;   /* 16px sabi mo */
+}
+
+.logout{
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    height: 32px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #cb5b06;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: #000;
+}
+
+/* MAIN CARD */
+
+.card{
+    position: absolute;
+    left: 320px;
+    top: 160px;
+    height: 560px;
+    width: 1150px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.cardtitle{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+}
+
+.cardtitle span{
+    display: block;
+}
+
+.cardtitlewhite{
+    color: #fff;
+}
+
+/* DELETE BUTTON – ILALIM NG TITLE */
+
+.deletebutton{
+    margin: 10px auto 20px auto;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.deletebutton:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* WHITE BOX / TABLE */
+
+.whitecard{
+    margin: 0 auto;
+    height: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 16px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #000;
+    overflow-y: auto;
+}
+
+.title-row{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 0.7fr;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.col-title{
+    padding-right: 10px;
+}
+
+.col-datetime{
+    text-align: left;
+}
+
+.col-price{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.col-select{
+    text-align: center;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 0.7fr;
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+}
+
+.row:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.row:nth-child(odd){
+    background-color: #ffffff;
+}
+
+.row .col-title,
+.row .col-datetime,
+.row .col-price,
+.row .col-select{
+    padding: 4px 4px;
+}

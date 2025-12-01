@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg2.jpg);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+    height: 70px;
+    z-index: 1;
+}
+
+header h2{
+    position: relative;
+}
+
+.orange{
+    position: absolute;
+    font-size: 40px;
+    color: #E36D01;
+    font-weight: 800;
+    left: 735px;
+    top: 3px;
+}
+
+.white{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+    left: 900px;
+    top: 3px;
+}
+
+
+.slide{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+    padding-top: 0;
+    z-index: 2;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.logo h1{
+    color: #cb5b06;
+    font-weight: 600;
+    text-align: left;
+    padding: 24px 0;
+    padding-left: 65px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+ul li:hover a{
+    background-color: #cb5b06;
+}
+
+.nounderline{
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    left: 40px;
+    font-size: 16px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    height: 32px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #cb5b06;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: #000;
+}
+
+
+.card{
+    position: absolute;
+    left: 650px;
+    top: 180px;
+    height: 320px;
+    width: 520px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #fff;
+    text-align: center;
+}
+
+.cardtitle{
+    margin-top: 60px;
+    color: orange;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.confirm-btn{
+    background: orange;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.confirm-btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+.picsize{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 40px;
+    top: 9px;
+}

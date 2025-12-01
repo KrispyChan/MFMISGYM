@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg2.jpg);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+h2{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #191919;
+}
+.orange{
+    font-size: 40px;
+    color: #E36D01;
+    font-weight: 800;
+} 
+.white{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+}
+.logo h1{
+    color: #cb5b06;
+    font-weight: 600;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.slide{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    background-color: #000;
+    transition: 0.5s ease;
+    border-radius: 10px;
+    gap: 20px;
+
+}
+.toggle{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 12px;
+    left: 233px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    background: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-220px);
+    transition: 0.5s ease;
+
+}
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: #cb5b06;
+    transition: 0.3s ease;
+}
+.toggle .top-line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toggle .middle-line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toggle .bottom-line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input:checked ~ .toggle .top-line{
+    left: 0px;
+    top: 10px;
+    width: 20px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom-line{
+    left: 0px;
+    top: 10px;
+    width: 20px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle-line{ 
+    opacity: 0;
+    transform: translateX(20px);
+}
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+input:checked ~ .toggle{
+    transform: translateX(0);
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+ul li a .active{
+    background-color: #cb5b06;
+}
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+ul li:hover a{
+    background-color: #cb5b06;
+}
+.search-bar{
+    position:absolute;
+    width: 200px;
+    background: #fff;
+    top: 15px;
+    right: 150px;
+    border-radius: 10px;
+    height: 30px;
+}
+.search-bar input{
+    color: #000;
+}
+.search-bar i{
+    padding: 5px;
+    font-size: 18px;
+}
+.paragraph{
+    position: absolute;
+    background-color: #191919;
+    border-radius: 10px;
+    text-align: center;
+    left: 490px;
+    bottom: 50px;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+}
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 82px;
+    left: 50px;
+}
+.panel{
+    background-color: #191919;
+    position: absolute;
+    left: 350px;
+    width: 900px;
+    height: 100px;
+    padding: 15px;
+    color: #cb5b06;
+    font-size:  45px;
+    text-align: center;
+    border-radius: 20px;
+}
+.panel:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.logout{
+    position: absolute;
+    top: 550px;
+    left: 80px;
+    height: 32px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #cb5b06;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+.logout:hover {
+    background-color: #000;
+}
+.machoguy {
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    bottom: 1px;
+    left: 1120px;
+    filter: brightness(0);
+}
+.machoguy2 {
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    bottom: 1px;
+    left: 1100px;
+}
+.main-box {
+    position: absolute; 
+    top: 10%;
+    width: 700px;
+    height: 400px;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    font-family: Dela Gothic One, sans-serif;
+    color: white;
+    overflow: hidden;
+    left: 550px;
+}
+.hellomem{
+    position: absolute;
+    top: 6%;
+    left: 120px;
+    color: white;
+    font-family: Dela Gothic One, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.manageprofile{
+    position: absolute;
+    top: 14%;
+    left: 200px;
+    color: orange;
+    font-family: Dela Gothic One, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.trackattendance{
+    position: absolute;
+    top: 22%;
+    left: 185px;
+    color: orange;
+    font-family: Dela Gothic One, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.bookclasses{
+    position: absolute;
+    top: 30%;
+    left: 215px;
+    color: orange;
+    font-family: Dela Gothic One, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.paymenthistory{
+    position: absolute;
+    top: 38%;
+    left: 150px;
+    color: orange;
+    font-family: Dela Gothic One, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.renewmembership{
+    position: absolute;
+    background-color: orange;
+    top: 250px;
+    left: 160px;
+    color: white;
+    font-weight: bold;
+    font-family: Dela Gothic One, sans-serif;
+    font-size: 20px;
+    padding: 25px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  
+}
+.renewmembership:hover {
+  background-color: #000;
+}
+.nounderline{
+    text-decoration: none;
+    color: inherit;
+}
+.picsize{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 200px;
+    top: 9px;
+}
+.profile-container {
+    background: gray; 
+    padding: 5px;        
+    display: inline-block;
+    border-radius: 10px; 
+}

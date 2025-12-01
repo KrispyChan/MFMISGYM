@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+    height: 70px;
+    z-index: 1;
+}
+
+header h2{
+    position: relative;
+}
+
+.orange{
+    position: absolute;
+    font-size: 40px;
+    color: #E36D01;
+    font-weight: 800;
+    left: 735px;
+    top: 3px;
+}
+
+.white{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+    left: 900px;
+    top: 3px;
+}
+
+.picsize{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 40px;
+    top: 9px;
+}
+
+.profilecon{
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.slide{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+    padding-top: 0;
+    z-index: 4;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.logo h1{
+    color: #cb5b06;
+    font-weight: 600;
+    text-align: left;
+    padding: 24px 0;
+    padding-left: 65px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+ul li:hover a{
+    background-color: #cb5b06;
+}
+
+.nounderline{
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    left: 40px;
+    font-size: 16px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    height: 32px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #cb5b06;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: #000;
+}
+
+.workout-list{
+    position: absolute;
+    left: 360px;
+    top: 140px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.workout-card{
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    padding: 18px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.cardtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.cardtitle input{
+    transform: scale(1.2);
+}
+
+.desc{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #f0f0f0;
+}
+
+.settimecard{
+    position: absolute;
+    left: 820px;
+    top: 140px;
+    height: 520px;
+    width: 700px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.backbtn{
+    position: absolute;
+    right: 395px;
+    top:   35px;
+    background-color: orange;
+    color: white;
+    padding: 5px 26px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 25px;
+}
+
+.backbtn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.calendar{
+    background: white;
+    padding: 20px;
+    width: 340px;
+    border-radius: 12px;
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.calendar-header{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.day-name{
+    font-weight: bold;
+}
+
+.day{
+    padding: 6px 0;
+    border-radius: 4px;
+}
+
+.inputbar{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.time-input{
+    background: #000;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px 32px;
+    width: 230px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    appearance: none;
+    outline: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.confirm-btn{
+    position: absolute;
+    margin-top: 30px;
+    background: orange;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    top: 50px;
+    right: 30px;
+}
+
+.confirm-btn:hover{
+    background: #000;
+    color: #fff;
+}

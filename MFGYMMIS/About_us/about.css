@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(bg.png);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+  background-color: hsl(0, 0%, 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+ 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: white;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: rgb(5, 1, 1);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20 px;
+}
+
+.nav-links li a:hover {
+  color: #ffffff; 
+}
+
+.red {
+  color: hsl(0, 100%, 22%);
+  font-weight: 900;
+}
+
+.black {
+  color: black;
+  font-weight: 900;
+}
+
+.bigicon {
+  position: absolute;
+  top: 55%;
+  left:61%;
+  transform: translateY(-50%); 
+}
+
+.bigicon img {
+  width: 450px;
+  height: auto;
+}
+
+.abouttext{
+    position: absolute;
+    top:20%;
+    left: 15%;
+    color: hsl(26, 100%, 38%);
+    font-size: 40px;
+    font-family: Dela Gothic One, sans-serif;
+}
+
+.muscletext{
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    color: hsl(0, 100%, 34%);
+    font-size: 40px;
+    font-family: Dela Gothic One, sans-serif;
+}
+
+.factorytext{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: hsl(26, 100%, 38%);
+    font-size: 40px;
+    font-family: Dela Gothic One, sans-serif;
+}
+
+.text{
+    position: absolute;
+    top: 62%;
+    left: 21%;
+    color: hsl(26, 100%, 38%);
+    font-size: 20px;
+    font-family: Dela Gothic One, sans-serif;
+}
+
+.equipment{
+  position: absolute;
+  top: 150%;
+  left:5%;
+  transform: translateY(-50%); 
+}
+
+.equipment img{
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.equipmenttext{
+    position: absolute;
+    top: 945px;
+    left: 60%;
+    color: hsl(26, 100%, 38%);
+    font-size: 30px;
+    font-family: Dela Gothic One, sans-serif;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.151);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.environment{
+    position: absolute;
+    top: 250%;
+    left: 53%;
+    transform: translateY(-50%); 
+}
+
+.environment img{
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.environmenttext{
+    position: absolute;
+    top: 1700px;
+    left: 5%;
+    color: hsl(26, 100%, 38%);
+    font-size: 30px;
+    font-family: Dela Gothic One, sans-serif;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.151);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.facility{
+    position: absolute;
+    top: 350%;
+    left: 5%;
+    transform: translateY(-50%); 
+}
+
+.facility img{
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.facilitytext{
+    position: absolute;
+    top: 2425px;
+    left:55%;
+    color: hsl(26, 100%, 38%);
+    font-size: 30px;
+    font-family: Dela Gothic One, sans-serif;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.151);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Back{
+    position: absolute;
+    top: 400%;
+    left: 43%;  
+}
+
+.Back button{
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    background-color: hsl(26, 100%, 38%);
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.Back a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Dela Gothic One, sans-serif;
+}
+
+.Back a:hover{
+    color: #ffffff;
+}
+
+
+
+
+
+

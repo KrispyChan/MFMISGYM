@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("equipmentscopy.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* HEADER */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 60px;
+    background-color: #181818;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+.nav-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo-orange {
+    color: #f77f00;
+    font-weight: 900;
+}
+
+.logo-white {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+/* NAV LINKS RIGHT SIDE */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #f4a261;
+}
+
+/* MAIN CONTENT */
+.page-content {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+}
+
+/* BIG DARK CARD */
+.renew-box {
+    width: 700px;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 30px;
+    padding: 40px 70px 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 40px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #787878;
+    letter-spacing: 1px;
+}
+
+/* TITLE "SELECT YOUR RENEWAL PLAN" */
+.renew-title {
+    text-align: center;
+    color: #f77f00;
+    font-size: 24px;
+    margin: 10px 0 25px;
+    letter-spacing: 2px;
+}
+
+/* PROCEED PAYMENT BUTTON (LINK) */
+.pay-btn {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    padding: 22px 0;
+    border-radius: 999px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.pay-btn:hover {
+    background-color: #f77f00;
+    color: #000000;
+    transform: translateY(-2px);
+}

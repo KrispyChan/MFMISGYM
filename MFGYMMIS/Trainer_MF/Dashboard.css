@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("trainerdashbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+    height: 70px;
+}
+
+header h2 {
+    margin-top: 5px;
+}
+
+.orange {
+    position: absolute;
+    color: hsl(29, 99%, 45%);
+    font-weight: 900;
+    font-size: 40px;
+    left: 740px;
+}
+
+.white {
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    font-size: 40px;
+    left: 834px;
+}
+
+.center-box {
+    position: absolute;
+    width: 50%;
+    left: 500px;
+    top: 100px;
+    background-color: #191919;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.orange-text {
+    color: #E36D01;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.white-text {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.machoguy1 {
+    width: 40%;
+    position: absolute;
+    bottom: 5px;
+    left: 800px;
+    filter: brightness(0) invert(0);
+}
+
+.machoguy2 {
+    width: 40%;
+    position: absolute;
+    bottom: 5px;
+    left: 785px;
+}
+
+.slide {
+    height: 100%;
+    width: 260px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-260px);
+    transition: 0.5s ease;
+    border-radius: 0 10px 10px 0;
+}
+
+.logo img {
+    width: 40px;
+    margin: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+.logo h1 {
+    color: #cb5b06;
+    padding: 20px;
+    padding-left: 65px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    padding-bottom: 28px;
+    font-weight: 700;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;   
+    font-weight: 500;     
+}
+
+ul li a i {
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul li:hover a {
+    background: #cb5b06;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input:checked ~ .slide {
+    transform: translateX(0);
+}
+
+input:checked ~ .toggle {
+    transform: translateX(0);
+}
+
+.slide {
+    transform: translateX(0) !important;
+}
+
+.common {
+    height: 2.4px;
+    width: 15px;
+    background: #cb5b06;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-line { top: 5px; }
+.middle-line { top: 10px; }
+.bottom-line { top: 15px; }
+
+input:checked ~ .slide {
+    transform: translateX(0);
+}
+
+input:checked ~ .toggle {
+    transform: translateX(0);
+}
+
+input:checked ~ .toggle .middle-line {
+    opacity: 0;
+}
+
+input:checked ~ .toggle .top-line {
+    transform: translateX(-50%) rotate(45deg);
+    top: 10px;
+}
+
+input:checked ~ .toggle .bottom-line {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 10px;
+}
+
+
+.logout {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    background: #cb5b06;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logout:hover {
+    background: #000;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}

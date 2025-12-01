@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & Schedule</title>
+    <link rel="stylesheet" href="class.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<header>
+    <h2><span class="orange">CLASS&SCHEDULE</span><span class="white">MANAGEMENT</span></h2>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search">
+        <img src="searchiconpic.png" alt="searchiconpic" class="searchiconpic">
+    </div>
+
+    <div>
+        <img src="profcon.png" alt="profile icon" class="profcon">
+    </div>
+</header>
+
+<div class="slide">
+    <div class="logo">
+        <img src="llogo-copy.png" alt="Muscle Factory logo">
+        <h1><span>MUSCLEFACTORY</span></h1>
+    </div>
+    
+    <ul>
+      <li><a href="dashboard.html"><i class='bx bx-home-alt'></i>Dashboard</a></li>
+      <li><a href="Member.html"><i class='bx bx-user' ></i>Member Management</a></li>
+      <li><a href="Trainer.html"><i class='bx bx-user' ></i>Trainer Management</a></li>
+      <li><a href="class.html"><i class='bx bx-calendar-week'></i>Class & Schedule Management</a></li>
+      <li><a href="../Dashboard/Finance_Management/Finance_Management.html"><i class='bx bx-file'></i>Finance Management</a></li>
+      <li><a href="../Dashboard/Inventory_Management/Inventory_Management.html"><i class='bx bx-file'></i>Inventory Management</a></li>
+      <li><a href="../Dashboard/System_Settings_folder/System_Settings.html"><i class='bx bx-cog' ></i>System Settings</a></li>
+    </ul>
+
+    <span class="profile">OWNER@GMAIL.COM</span>
+
+    <div class="logout">
+        <a href="/index.html" class="logout-btn"><i class='bx bx-log-out'></i>logout</a>
+    </div>
+</div>
+
+<div class="schedule-wrapper">
+    <div class="schedule-card">
+        <h3 class="card-title">CLASS SCHEDULE</h3>
+
+        <div class="schedule-content">
+            <div class="calendar-box">
+                <img src="date.jfif" alt="calendar">
+            </div>
+
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Trainer</th>
+                            <th>Time</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Froilan Seth Bangud</td>
+                            <td>Kristian Arquero</td>
+                            <td>7pm – 9pm</td>
+                            <td>Present</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-box">
+                <label>Name:</label>
+                <input type="text" placeholder="Name">
+
+                <label>Trainer:</label>
+                <input type="text" placeholder="Trainer">
+
+                <label>Day:</label>
+                <input type="text" placeholder="Day">
+
+                <label>Time:</label>
+                <input type="text" placeholder="Time">
+
+                <button class="add-btn">Add Member</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

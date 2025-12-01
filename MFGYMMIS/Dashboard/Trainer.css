@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("place 2.jpg");
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+    height: 70px;
+}
+
+header h2{
+    margin-top: 5px;
+}
+
+.orange{
+    position: absolute;
+    color: #E36D01;
+    font-weight: 900;
+    font-size: 40px;
+    left: 530px;
+    top: 10px;
+}
+
+.white{
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    font-size: 40px;
+    left: 745px;
+    top: 10px;
+}
+
+.search-container {
+    position: absolute;
+    right: 200px;
+    top: 12px;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%; 
+    background: none;
+}
+
+.searchiconpic {
+    width: 30px;
+    height: 22px;
+}
+
+.profcon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 130px;
+    top: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+}
+
+.logo img{
+    width: 40px;
+    margin: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.logo h1{
+    color: #cb5b06;
+    font-weight: 600;
+    text-align: right;
+    padding: 20px 0;
+    padding-right: 30px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    margin-top: 0;
+    padding-bottom: 28px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+ul li a i{
+    width: 24px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li:hover a,
+ul li a.active{
+    background-color: #cb5b06;
+}
+
+.profile{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    left: 40px;
+    font-size: 16px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    height: 32px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #cb5b06;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.logout-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: #000;
+}
+
+.trainer-panel{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    width: 60%;
+    background-color: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.trainer-header{
+    padding: 15px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #cb5b06;
+    border-bottom: 2px solid #333;
+}
+
+.trainer-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.trainer-table tr,
+.trainer-table td{
+    padding: 15px;
+    border: 2px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+    background-color: #191919;
+}
+
+.add{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #191919;
+    border-radius: 20px;
+}
+
+.add input{
+    background-color: #000;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 250px;
+    padding: 0 8px;
+}
+
+.name{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.Date{
+    position: absolute;
+    top: 70px;
+    left: 25px;
+}
+
+.NO{
+    position: absolute;
+    top: 120px;
+    left: 25px;
+}
+
+.ADD{
+    background-color: #cb5b06;
+    border-radius: 20px;
+    position: absolute;
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: #000;
+    bottom: 15px;
+    left: 100px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ADD:hover{
+    background-color: #fff;
+}
