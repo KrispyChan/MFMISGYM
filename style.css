@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(equipmentbg.jpg);
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+  background-color: hsl(0, 0%, 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: rgb(5, 1, 1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #f4a261; 
+}
+
+.red {
+  color: hsl(0, 100%, 22%);
+  font-weight: 900;
+}
+
+.black {
+  color: black;
+  font-weight: 900;
+}
+
+.muscletext{
+     position: absolute;
+     top: 20%;
+     left: 80px;
+     color: hsl(0, 100%, 34%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+.factorytext{
+     position: absolute;
+     top: 33%;
+     left: 180px;
+     color: hsl(26, 94%, 41%);
+     font-size: 60px;
+     font-family: Dela Gothic One, sans-serif;
+}
+
+.fitnessgymtext{
+     position: absolute;
+     top: 50%;
+     left: 100px;
+     color: hsl(0, 100%, 34%);
+     font-size: 40px;
+     font-family: Dela Gothic One, sans-serif;  
+}
+
+.login-box {
+    position: absolute;
+    top: 25%;
+    right: 80px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+    left: 800px;
+}
+
+/* ==== TABS (MEMBER / TRAINER / OWNER) ==== */
+
+.login-tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 0%);
+    padding: 12px 0;
+}
+
+
+.login-tabs .tab {
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.login-tabs .tab a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.login-tabs .tab a:hover {
+    color: #f4a261;
+}
+
+.login-form {
+    display: absolute;
+    flex-direction: column;
+    padding: 25px;
+    gap: 15px;
+}
+
+.input-box {
+    display: absolute;
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 50px;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    outline: none;
+    height: 45px;
+    width: 350px;
+    margin-top: 10px;
+}
+
+.input-box::placeholder {
+    color: hsl(0, 0%, 47%);
+}
+
+/* Links: Forgot + Signup */
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.form-links a {
+    text-decoration: none;
+    color: hsl(31, 100%, 48%);
+    font-weight: bold;
+}
+
+/* Log in button to guys*/
+.login-btn {
+    position: absolute;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    left: 140px;
+    top: 270px;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: hsl(31, 100%, 48%);
+    color: black;
+}
